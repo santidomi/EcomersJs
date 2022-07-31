@@ -29,13 +29,7 @@ class Carrito {
         });
 
         if(productosLS === infoProducto.id){
-            Swal.fire({
-                type: 'info',
-                title: 'Oops...',
-                text: 'El producto ya está agregado',
-                showConfirmButton: false,
-                timer: 1000
-            })
+            this.insertarCarrito(infoProducto);
         }
         else {
             this.insertarCarrito(infoProducto);

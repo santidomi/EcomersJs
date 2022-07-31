@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .bgbd{
   background-color: #1f1d1d !important;
 }
@@ -42,7 +48,6 @@ header a:hover{
 
 .dropdown-menu {
 max-width: 100%;
-width: 250px;  
 }
 .navbar-nav .dropdown-menu {
   position: fixed;
@@ -51,6 +56,9 @@ width: 250px;
   max-width: 100%;
 }
 
+.dropdown-menu img{
+  
+}
 
 .showcase {
   position: relative;
@@ -63,7 +71,9 @@ width: 250px;
   
 }
 
-
+.nombrecarrito{
+  padding-right: 200px;
+}
 
 h1 {
   font-weight: 300;
@@ -123,7 +133,8 @@ h1 {
 
 
 .table>:not(caption)>*>* {
-padding: 0;  
+padding: 2px;  
+border: #000;
 }
 
 
@@ -271,7 +282,17 @@ justify-content: space-around;
   justify-content: center;
 }
 
+.font-weight-bold{
+color: #eee;
+}
 
+.card-title{
+  color: #eee;
+}
+
+.list-unstyled li{
+color: #eee;
+}
 
 .ubi {
 background-color: #171616;
@@ -318,4 +339,38 @@ border-color: #000;
 .form-control {
   background-color: #333232;
 }
+
+#carrito{
+  overflow-y:scroll ;
+  max-width: 100%;
+  max-height: 60%;
+
+}
+
+#phms img{
+width: 35%;
+}
+
+
+
+@media screen and (min-width:950px) {
+  #lista-productos{
+    max-width: 540px;
+  }
+
+}
+
+
+@media screen and (max-width:950px) {
+  .dropdown-menu {
+    max-width: 100%;
+    
+    }
+
+    #lista-productos{
+      width: 70%;
+      
+    }
+}
+
 
