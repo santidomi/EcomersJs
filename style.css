@@ -348,6 +348,9 @@ border-color: #000;
 width: 35%;
 }
 
+#phau img{
+  width: 60%;
+}
 
 
 @media screen and (min-width:950px) {
